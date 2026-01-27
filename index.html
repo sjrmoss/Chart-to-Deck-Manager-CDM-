@@ -1,165 +1,169 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Chart to Deck Manager (CDM) — Excel Charts to PowerPoint</title>
-  <meta name="description" content="Export Excel charts to PowerPoint automatically with deterministic slide layouts (1-up/2-up/4-up)."/>
-  <meta name="theme-color" content="#0F7B82"/>
-  <link rel="stylesheet" href="assets/styles.css?v=8"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chart to Deck Manager (CDM)</title>
+  <meta name="description" content="Chart to Deck Manager (CDM) turns Excel charts into clean, repeatable PowerPoint decks using deterministic 1‑up / 2‑up / 3‑up / 4‑up layout logic." />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  
-<div class="topbar">
-  <div class="topbar-inner">
-    <div class="app-title"><span class="badge"></span> Chart to Deck Manager (CDM)</div>
-    <div class="topbar-right">
-      <a href="index.html" style="text-decoration:underline">Home</a> <a href="excel-charts-to-powerpoint.html" style="">Excel→PPT</a> <a href="export-excel-charts-to-ppt.html" style="">Export</a> <a href="update-powerpoint-from-excel.html" style="">Update</a> <a href="docs.html" style="">Docs</a>
-      <span class="pill"><a data-ms-store href="#">Microsoft Store</a></span>
-    </div>
-  </div>
-</div>
 
-  <div class="shell">
-    
-<div class="sidebar">
-  <div class="sidebar-inner">
-
-    <div class="sb-group">
-      <div class="sb-label">Get CDM</div>
-      <a class="sb-btn store" data-ms-store href="#">Get it on Microsoft Store (placeholder)</a>
-      <div class="sb-note">Replace the Store link later in <code>assets/site.js?v=8</code>.</div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">Purchase</div>
-      <div class="sb-row">
-        <a class="sb-btn" data-paypal-individual href="#">Individual — $20</a>
-        <a class="sb-btn" data-paypal-enterprise href="#">Enterprise — $200</a>
+  <!-- Header (buttons only links) -->
+  <header class="bar">
+    <div class="container bar-inner">
+      <div class="brand">
+        <span class="badge" aria-hidden="true"></span>
+        <span>Chart to Deck Manager (CDM)</span>
       </div>
-      <div class="sb-note">Same two-button layout as CDM’s purchase flow.</div>
-      <div style="margin-top:10px">
-        <a class="sb-btn secondary" data-open-purchase href="#"></a>
+      <div class="actions" aria-label="Purchase and Store buttons">
+        <a class="cdm-btn small" href="#" data-action="store">Get CDM on Microsoft Store</a>
+        <a class="cdm-btn small" href="#" data-action="buy-individual">Individual — $20</a>
+        <a class="cdm-btn small" href="#" data-action="buy-enterprise">Enterprise — $200</a>
       </div>
     </div>
+  </header>
 
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">What CDM does</div>
-      <div class="radios">
-        <div class="radio active"><span class="dot"></span> Excel charts → PowerPoint</div>
-        <div class="radio"><span class="dot"></span> 1‑up / 2‑up / 4‑up layouts</div>
-        <div class="radio"><span class="dot"></span> Deterministic rebuilds</div>
+  <main class="container">
+    <section class="hero">
+      <h1>Excel charts to PowerPoint — automated, repeatable, professional.</h1>
+      <p>
+        Chart to Deck Manager (CDM) is a Windows desktop reporting tool for analysts, consultants, and operators who need to turn Excel-based charts into clean,
+        consistently formatted PowerPoint decks — without manual copy/paste or fragile links.
+      </p>
+      <div class="pills" aria-label="Key benefits">
+        <span class="pill">No VBA required</span>
+        <span class="pill">Deterministic rebuilds</span>
+        <span class="pill">Offline licensing (no accounts)</span>
+        <span class="pill">Consultant-style layouts</span>
       </div>
-    </div>
 
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">Download</div>
-      <a class="sb-btn secondary" href="Instructions.pdf">Instructions (PDF)</a>
-      <div class="sb-note">This links to the Instructions.pdf you uploaded.</div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">Contact / Support</div>
-      <div class="field">
-        <input class="input" placeholder="support@yourdomain.com (placeholder)" />
-        <div class="sb-note">Tip: use a free Gmail alias or a custom domain later.</div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    <main class="main">
-      <div class="main-inner">
-        
-<div class="h1">Excel charts to PowerPoint — without copy/paste.</div>
-<p class="lede">Chart to Deck Manager (CDM) is a Windows desktop tool that turns Excel charts into clean, repeatable PowerPoint decks using deterministic 1‑up / 2‑up / 4‑up layout logic.</p>
-
-<div class="kpis">
-  <div class="kpi">No VBA required</div>
-  <div class="kpi">Deterministic rebuilds</div>
-  <div class="kpi">Offline licensing (no accounts)</div>
-  <div class="kpi">Consultant-style layouts</div>
-</div>
-
-<div class="cards">
-  <div class="card">
-    <h3>Start with the problem people search for</h3>
-    <p>Trying to get <b>Excel charts into PowerPoint</b> cleanly is slow and fragile. CDM automates the workflow so your deck rebuilds predictably.</p>
-    <p style="margin-top:10px"><a href="excel-charts-to-powerpoint.html">How Excel charts → PowerPoint works →</a></p>
-  </div>
-  <div class="card">
-    <h3>Exports a real PPTX you can open and share</h3>
-    <p>CDM generates a PowerPoint deck file you can open in PowerPoint immediately. (Your Store listing link goes in the sidebar.)</p>
-    <p style="margin-top:10px"><a href="export-excel-charts-to-ppt.html">Export workflow →</a></p>
-  </div>
-</div>
-
-<div class="shot">
-  <img src="assets/screenshots/cdm-main.png" alt="CDM app screenshot"/>
-  <div class="caption">CDM look &amp; feel (baseline screenshot) — the website theme matches the app’s teal title bar, slate background, and aqua controls.</div>
-</div>
-
-<div class="cards">
-  <div class="card">
-    <h3>Layouts that match reporting reality</h3>
-    <p>Pick 1‑up, 2‑up, or 4‑up. Keep it consistent across slides and rebuild the same deck again tomorrow.</p>
-    <p style="margin-top:10px"><a href="update-powerpoint-from-excel.html">Updating decks when Excel changes →</a></p>
-  </div>
-  <div class="card">
-    <h3>Licensing is simple</h3>
-    <p>Free trial, then a one-time license key. The purchase buttons in the left pane match the CDM purchase flow. You can also open the modal.</p>
-    <p style="margin-top:10px"><a href="#" data-open-purchase>Open purchase →</a></p>
-  </div>
-</div>
-
-      </div>
-    </main>
-  </div>
-
-  
-<div id="purchaseBackdrop" class="modal-backdrop" aria-hidden="true">
-  <div class="modal" role="dialog" aria-modal="true" aria-label="Purchase CDM">
-    <div class="modal-header">
-      <strong>Chart to Deck Manager (CDM)</strong>
-      <button id="purchaseClose" class="modal-close" aria-label="Close">✕</button>
-    </div>
-    <div class="modal-body">
-      <p><b>30‑day free trial</b>, then a simple offline license key. No accounts.</p>
-
-      <div class="modal-actions">
-        <a class="sb-btn store" data-ms-store href="#">Get it on Microsoft Store (placeholder)</a>
-
-        <div class="mini-row">
-          <a class="sb-btn" data-paypal-individual href="#">Buy Individual License — $20 (PayPal)</a>
-          <a class="sb-btn" data-paypal-enterprise href="#">Buy Enterprise (10+ users) — $200 (PayPal)</a>
+      <div class="grid" role="list">
+        <div class="card" role="listitem">
+          <h2>Built for real reporting workflows</h2>
+          <p>
+            Import one or more Excel workbooks, copy/paste charts into CDM slots, choose your slide size, and export a real PowerPoint deck.
+            The key idea: your deck is <em>regenerable</em>. Rebuild the same deck again tomorrow and get the same structure.
+          </p>
         </div>
-
-        <div class="field">
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-            <div style="font-weight:900">License key</div>
-            <button id="copyKey" class="sb-btn secondary" style="width:auto; padding:10px 14px">Copy</button>
-          </div>
-          <input id="licenseKey" class="input" value="CDM-1123-9292" readonly />
-          <div class="smallprint">Paste into CDM when prompted (example key shown). Press <kbd>Esc</kbd> to close this window.</div>
+        <div class="card" role="listitem">
+          <h2>Layouts that match how people present</h2>
+          <p>
+            Pick 1‑up, 2‑up, 3‑up, or 4‑up. Two-up supports side-by-side or over/under. Three-up supports single-on-top or single-on-bottom.
+            CDM keeps the layout rules consistent across slides and across rebuilds.
+          </p>
+        </div>
+        <div class="card" role="listitem">
+          <h2>Exports a standard PPTX you can open and share</h2>
+          <p>
+            CDM generates a standard .pptx file that opens directly in PowerPoint. The output deck is yours — editable, shareable, and suitable for
+            client delivery or internal reporting.
+          </p>
+        </div>
+        <div class="card" role="listitem">
+          <h2>Simple licensing</h2>
+          <p>
+            CDM includes a 30‑day free trial. After the trial, purchase a one‑time license and activate locally with a single license key.
+            No accounts. No servers.
+          </p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-  <div class="footer">
-  <div>Chart to Deck Manager (CDM) © Steven Moss &amp; Stacy Moss. All rights reserved.</div>
-  <div class="note">This site is a static HTML starter. Update the Microsoft Store URL in <code>assets/site.js?v=8</code> when your listing is live.</div>
+    <section class="section" aria-labelledby="screens">
+      <h2 id="screens">Screenshots</h2>
+      <p>Below are key screens and workflows, shown in the same order used in your Store listing.</p>
+      <div class="figure">
+  <img src="assets/screens/01-import-and-select.png" alt="CDM screenshot 1">
+  <div class="figcap">Once Chart to Deck Manager (CDM) is launched, choose Excel Workbooks and PowerPoint Presentation(s) to import, then choose the export folder and filename.</div>
 </div>
-  <script src="assets/site.js?v=8"></script>
+<div class="figure">
+  <img src="assets/screens/02-left-pane-controls.png" alt="CDM screenshot 2">
+  <div class="figcap">Use controls on the left pane to adjust screen size, copy and paste charts to slides, and export to PowerPoint. Use the right pane to reorder slides and move charts from one slide to another.</div>
+</div>
+<div class="figure">
+  <img src="assets/screens/03-layout-arrangements.png" alt="CDM screenshot 3">
+  <div class="figcap">Multiple slide arrangements can be created. 2‑up format can be arranged side‑by‑side or over/under. 3‑up format can place the single chart on the top or the bottom.</div>
+</div>
+<div class="figure">
+  <img src="assets/screens/04-zoom-and-reorder.png" alt="CDM screenshot 4">
+  <div class="figcap">Slide-pane divider on the right lets you zoom out, making it easier to arrange and reorder slides.</div>
+</div>
+<div class="figure">
+  <img src="assets/screens/05-export-to-powerpoint.png" alt="CDM screenshot 5">
+  <div class="figcap">Pressing the Export button seamlessly sends the deck to PowerPoint — exactly as shown in Chart to Deck Manager (CDM).</div>
+</div>
+    </section>
+
+    <section class="section" aria-labelledby="instructions">
+      <h2 id="instructions">Instructions</h2>
+      <p>
+        The content below is the Instructions PDF converted into a web page for easy scrolling.
+        (No links here by design — the only links on this page are the buttons in the header and footer.)
+      </p>
+
+      <div class="instructions">
+        <h3>Step 1</h3>
+<p>Import and Add File(s) Imports charts from one or more Excel workbooks and PowerPoint Presentations and adds them in image format to the current deck.</p>
+<ul><li>Hidden Excel worksheets and PowerPoint Slides are not imported.</li></ul>
+<h3>Step 2. Replace Existing Slides (Clears Deck)</h3>
+<p>Check box appears when at least one slide exists and will clear all slides in the current deck before importing new charts.</p>
+<h3>Step 3. Select Slide Size</h3>
+<p>Select Widescreen (16:9) or Standard (4:3) for the entire presentation.</p>
+<h3>Step 4. Arranging Charts</h3>
+<p>Slides start as 1-Up. Adding a second chart creates a 2-Up slide; a third chart creates a 3-Up slide, and a 4th chart creates a 4- Up slide. Charts always maintain their original aspect ratios and are never distorted.</p>
+<p>2-up slides may be arranged side by side or over/under 3 up slides may be arranged with a single chart on top or on the bottom. Trying to move a 5th chart to a 4-up Slide swaps the charts between the 4-up and source slides.  Whilst trying to paste a 5th chart to a 4-up slide places the pasted chart to a new slide below the 4-up Slide.</p>
+<ul><li>Moving charts within or between slides will result in charts swapping positions.</li></ul>
+<h3>Step 5. Reordering Slides</h3>
+<p>Grab handles in the bottom left corner of each slide enables dragging a slide up or down to insert between others.</p>
+<p>Sliding the divider separating the left and right panes allows the user to zoom in/out and makes arranging slides easier.</p>
+<h3>Step 6. Clipboard & Edit Controls</h3>
+<p>These controls operate on the currently selected chart.</p>
+<p>Copy — copies the selected slide, Ctrl-C is also supported to copy content outside of CDM. Paste — inserts the copied chart or clipboard content into the selected slide or the area before or after an existing slide. Ctrl-V is also supported to paste content inside or outside of CDM.</p>
+<ul><li>Delete Slide — deletes the selected slide. Delete key is also supported for this action.</li><li>Undo — reverts the most recent actions one at a time (doesn’t undo import or cleared deck actions). Ctrl-Z is also</li></ul>
+<p>supported.</p>
+<h3>Step 7. Export Slide to PowerPoint</h3>
+<p>Export only the currently selected slide to a new PowerPoint file.</p>
+<h3>Step 8. Choose Export Folder</h3>
+<p>Select the folder where exported PowerPoint files will be saved. Export folder defaults to the source file(s) location. Click Change Export Folder to select a different destination.</p>
+<h3>Step 9. Save PowerPoint As</h3>
+<p>Enter the filename in Save PowerPoint As Field; Existing filenames auto-increment if a new filename is not entered.</p>
+<h3>Step 10. Export Deck to PowerPoint</h3>
+<p>Export the entire deck exactly as shown in the right pane. PowerPoint opens automatically.</p>
+<p>Chart to Deck Manager (CDM) © 2026 Steven Moss & Stacy Moss — All rights reserved.</p>
+<p>Chart to Deck Manager (CDM)</p>
+<p>Turn Excel charts into polished PowerPoint decks—fast, clean, and repeatable.</p>
+<p>Chart to Deck Manager (CDM) is a Windows desktop tool designed for professionals who regularly convert Excel charts into PowerPoint presentations and are tired of manual copying, resizing, and layout cleanup.</p>
+<p>CDM automates the entire process: select your charts in Excel, choose a layout, and generate a professionally structured PowerPoint deck in seconds.</p>
+<p>What CDM Does</p>
+<ul><li>Instantly exports Excel charts into PowerPoint</li><li>Automatically applies clean, consistent slide layouts (1-up, 2-up, 3-up, and 4-up)</li><li>Preserves chart clarity and proportions</li><li>Eliminates manual resizing, dragging, and alignment</li><li>Produces presentation-ready slides every time</li></ul>
+<p>Who It’s For</p>
+<ul><li>Financial analysts and investment professionals</li><li>Consultants and advisory firms</li><li>Executives and management teams</li><li>Anyone who builds recurring PowerPoint decks from Excel data</li></ul>
+<p>Why CDM Is Different</p>
+<ul><li>Deterministic layouts — no surprises, no rework</li><li>Excel-native workflow — export directly from Excel</li><li>Desktop-first design — no cloud dependency</li><li>Offline operation — works without internet access</li><li>Professional consistency — every deck follows the same structure</li></ul>
+<p>Key Benefits</p>
+<ul><li>Dramatically reduces deck-building time</li><li>Ensures consistent slide formatting across teams</li></ul>
+<p>Licensing & Availability</p>
+<ul><li>Windows desktop application</li><li>30-day free trial</li><li>One-time license (no subscriptions)</li><li>Individual and enterprise licensing options</li><li>Removes repetitive, error-prone manual steps</li><li>Improves presentation quality with zero design effort</li></ul>
+<p>Chart to Deck Manager (CDM) © 2026 Steven Moss & Stacy Moss — All rights reserved.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with same buttons -->
+  <footer class="footer">
+    <div class="container">
+      <div class="actions" aria-label="Purchase and Store buttons (footer)">
+        <a class="cdm-btn small" href="#" data-action="store">Get CDM on Microsoft Store</a>
+        <a class="cdm-btn small" href="#" data-action="buy-individual">Individual — $20</a>
+        <a class="cdm-btn small" href="#" data-action="buy-enterprise">Enterprise — $200</a>
+      </div>
+    </div>
+    <div class="copyright">
+      Chart to Deck Manager (CDM) © 2026 Steven Moss &amp; Stacy Moss. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>
