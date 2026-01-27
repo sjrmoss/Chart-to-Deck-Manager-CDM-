@@ -222,3 +222,34 @@ body{
 }
 .footer a{color:rgba(255,255,255,.9); font-weight:900; text-decoration:none}
 .footer a:hover{text-decoration:underline}
+/* --- CDM button alignment tweaks --- */
+.sb-btn{
+  font-size:14px;
+}
+.sb-btn.cdm-big{
+  padding:14px 12px;
+  border-radius:6px; /* closer to app */
+}
+.sb-btn.cdm-tall{
+  padding:16px 12px;
+  border-radius:6px;
+}
+.sb-btn.cdm-muted{
+  background:rgba(255,255,255,.08);
+  color:#f3f7ff;
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:none;
+}
+
+/* Contact email display (not an input) */
+.contact-email{
+  display:block;
+  padding:10px 10px;
+  border-radius:6px;
+  border:1px solid rgba(0,0,0,.35);
+  background:#0e141d;
+  color:#eaf1ff;
+  font-weight:900;
+  text-decoration:none;
+}
+.contact-email:hover{filter:brightness(1.04)}
