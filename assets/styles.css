@@ -69,11 +69,20 @@ body{
   margin:0 auto;
   padding:16px 14px 34px;
   display:grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 360px 1fr;
   gap:14px;
+  align-items:start;
 }
 @media (max-width: 980px){
-  .shell{grid-template-columns:1fr}
+  .shell{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:16px 14px 34px;
+  display:grid;
+  grid-template-columns: 360px 1fr;
+  gap:14px;
+  align-items:start;
+}
 }
 
 .sidebar{
@@ -164,8 +173,8 @@ body{
 .main-inner{padding:18px}
 
 .h1{
-  font-size:34px;
-  line-height:1.08;
+  font-size:30px;
+  line-height:1.12;
   margin:0 0 10px;
   letter-spacing:.2px;
 }
@@ -205,7 +214,14 @@ body{
   overflow:hidden;
   background:rgba(0,0,0,.18);
 }
-.shot img{display:block; width:100%; height:auto}
+.shot img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:620px;
+  object-fit:contain;
+  background:rgba(0,0,0,.12);
+}
 .caption{
   padding:10px 12px;
   color:rgba(255,255,255,.84);
@@ -253,3 +269,27 @@ body{
   text-decoration:none;
 }
 .contact-email:hover{filter:brightness(1.04)}
+
+
+/* Keep sidebar left, never stack above content */
+@media (max-width: 900px){
+  .shell{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:16px 14px 34px;
+  display:grid;
+  grid-template-columns: 360px 1fr;
+  gap:14px;
+  align-items:start;
+}
+}
+
+/* Screenshot scaling */
+.shot img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:620px;
+  object-fit:contain;
+  background:rgba(0,0,0,.12);
+}
