@@ -6,95 +6,7 @@
   <title>Excel Charts to PowerPoint — Automatic Export | CDM</title>
   <meta name="description" content="How to export Excel charts to PowerPoint automatically with consistent slide layouts."/>
   <meta name="theme-color" content="#0F7B82"/>
-  <link rel="stylesheet" href="assets/styles.css?v=6"/>
-  <style id="inline-css">
-:root{
-  /* CDM-inspired palette (from screenshots) */
-  --cdm-bg:#4671A2;            /* main slate blue */
-  --cdm-bg2:#3b628f;
-  --cdm-teal:#0F7B82;          /* title bar teal */
-  --cdm-teal2:#0c6d73;
-  --cdm-panel:#355E89;         /* left pane */
-  --cdm-panel2:#2e547d;
-  --cdm-btn:#BFE3EC;           /* light aqua buttons */
-  --cdm-btn2:#A9D7E3;
-  --cdm-btnText:#0b1a2b;
-  --cdm-line:rgba(255,255,255,.22);
-  --cdm-line2:rgba(0,0,0,.20);
-  --cdm-white:#ffffff;
-  --cdm-shadow:0 10px 24px rgba(0,0,0,.26);
-  --radius:10px;
-  --radius2:14px;
-  --max:1180px;
-  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-}
-
-
-.shell{
-  max-width:var(--max);
-  margin:0 auto;
-  padding:16px 14px 34px;
-  display:grid;
-  grid-template-columns: 360px 1fr;
-  gap:14px;
-  align-items:start;
-}
-
-@media (max-width: 900px){
-  .shell{grid-template-columns:1fr}
-  .sidebar{position:static}
-}
-
-@media (max-width: 980px){
-  .cards{grid-template-columns:1fr}
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  font-family:var(--font);
-  color:#f3f7ff;
-  background:
-    radial-gradient(1000px 650px at 15% -10%, rgba(255,255,255,.14), transparent 60%),
-    radial-gradient(900px 600px at 85% 0%, rgba(15,123,130,.22), transparent 55%),
-    linear-gradient(180deg, var(--cdm-bg), #2b4c73 78%, #223a57);
-}
-
-/* Top title bar */
-.topbar{
-  position:sticky; top:0; z-index:30;
-  background:linear-gradient(180deg, var(--cdm-teal), var(--cdm-teal2));
-  border-bottom:1px solid rgba(255,255,255,.25);
-}
-.topbar-inner{
-  max-width:var(--max);
-  margin:0 auto;
-  padding:10px 14px;
-  display:flex; align-items:center; justify-content:space-between;
-  gap:12px;
-}
-.app-title{
-  display:flex; align-items:center; gap:10px;
-  font-weight:800;
-  letter-spacing:.2px;
-}
-.badge{
-  width:18px; height:18px; border-radius:5px;
-  background:linear-gradient(135deg, #eaf7ff, #9ce7ee);
-  box-shadow:0 4px 10px rgba(0,0,0,.25);
-}
-.topbar a{color:#eaf7ff; text-decoration:none; font-weight:800}
-.topbar a:hover{text-decoration:underline}
-.topbar-right{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-.pill{
-  font-size:12px; font-weight:800;
-  padding:7px 10px; border-radius:999px;
-  background:rgba(0,0,0,.18);
-  border:1px solid rgba(255,255,255,.22);
-}
-
-/* Layout */
-
-  </style>
+  <link rel="stylesheet" href="assets/styles.css?v=8"/>
 </head>
 <body>
   
@@ -115,8 +27,8 @@ body{
 
     <div class="sb-group">
       <div class="sb-label">Get CDM</div>
-      <a class="sb-btn cdm-big store" data-ms-store href="#">Get CDM on Microsoft Store</a>
-      <div class="sb-note">Store link will be updated once the Microsoft Store listing is live.</div>
+      <a class="sb-btn store" data-ms-store href="#">Get it on Microsoft Store (placeholder)</a>
+      <div class="sb-note">Replace the Store link later in <code>assets/site.js?v=8</code>.</div>
     </div>
 
     <div class="hr"></div>
@@ -124,11 +36,13 @@ body{
     <div class="sb-group">
       <div class="sb-label">Purchase</div>
       <div class="sb-row">
-        <a class="sb-btn cdm-big" data-paypal-individual href="#">Individual — $20</a>
-        <a class="sb-btn cdm-big" data-paypal-enterprise href="#">Enterprise — $200</a>
+        <a class="sb-btn" data-paypal-individual href="#">Individual — $20</a>
+        <a class="sb-btn" data-paypal-enterprise href="#">Enterprise — $200</a>
       </div>
       <div class="sb-note">Same two-button layout as CDM’s purchase flow.</div>
-      
+      <div style="margin-top:10px">
+        <a class="sb-btn secondary" data-open-purchase href="#"></a>
+      </div>
     </div>
 
     <div class="hr"></div>
@@ -146,19 +60,18 @@ body{
 
     <div class="sb-group">
       <div class="sb-label">Download</div>
-      <a class="sb-btn" href="Instructions.pdf">Instructions (PDF)</a>
+      <a class="sb-btn secondary" href="Instructions.pdf">Instructions (PDF)</a>
       <div class="sb-note">This links to the Instructions.pdf you uploaded.</div>
     </div>
 
     <div class="hr"></div>
 
-    
-        <div class="sb-group">
-  <div class="sb-label">Contact / Support</div>
-  <a class="contact-email" href="mailto:sj.moss@comcast.net">sj.moss@comcast.net</a>
-  <div class="sb-note">Email support. (Replace later if you add a dedicated support address.)</div>
-</div>
-        
+    <div class="sb-group">
+      <div class="sb-label">Contact / Support</div>
+      <div class="field">
+        <input class="input" placeholder="support@yourdomain.com (placeholder)" />
+        <div class="sb-note">Tip: use a free Gmail alias or a custom domain later.</div>
+      </div>
     </div>
 
   </div>
@@ -171,12 +84,12 @@ body{
 <p class="lede">If you search “excel charts to powerpoint”, you’re probably tired of manual copy/paste, mis-sized charts, and decks that drift over time. CDM is built to make the process repeatable.</p>
 
 <div class="card" style="margin-top:12px">
-  <h3>Why copy/paste breaks in real reporting</h3>
+  <h3>What most people do (and why it breaks)</h3>
   <p><b>Copy → Paste</b> is fast once, but painful every update. Linked charts help, but they often break in real reporting environments.</p>
 </div>
 
 <div class="card" style="margin-top:12px">
-  <h3>How CDM keeps decks consistent</h3>
+  <h3>What CDM does differently</h3>
   <p>CDM treats charts like “slots” in a deck and applies deterministic layout rules (1‑up, 2‑up, 4‑up). You rebuild the deck the same way every time.</p>
 </div>
 
@@ -186,21 +99,49 @@ body{
 </div>
 
 <div class="card" style="margin-top:12px">
-  <h3>Get CDM</h3>
-  <p>When your Microsoft Store listing is live, the “Get CDM on Microsoft Store” button in the left pane becomes your primary call-to-action.</p>
+  <h3>Next step</h3>
+  <p>When your Microsoft Store listing is live, the “Get it on Microsoft Store” button in the left pane becomes your primary call-to-action.</p>
 </div>
 
       </div>
     </main>
   </div>
-</div>
+
+  
+<div id="purchaseBackdrop" class="modal-backdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Purchase CDM">
+    <div class="modal-header">
+      <strong>Chart to Deck Manager (CDM)</strong>
+      <button id="purchaseClose" class="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <p><b>30‑day free trial</b>, then a simple offline license key. No accounts.</p>
+
+      <div class="modal-actions">
+        <a class="sb-btn store" data-ms-store href="#">Get it on Microsoft Store (placeholder)</a>
+
+        <div class="mini-row">
+          <a class="sb-btn" data-paypal-individual href="#">Buy Individual License — $20 (PayPal)</a>
+          <a class="sb-btn" data-paypal-enterprise href="#">Buy Enterprise (10+ users) — $200 (PayPal)</a>
+        </div>
+
+        <div class="field">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <div style="font-weight:900">License key</div>
+            <button id="copyKey" class="sb-btn secondary" style="width:auto; padding:10px 14px">Copy</button>
+          </div>
+          <input id="licenseKey" class="input" value="CDM-1123-9292" readonly />
+          <div class="smallprint">Paste into CDM when prompted (example key shown). Press <kbd>Esc</kbd> to close this window.</div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
   <div class="footer">
   <div>Chart to Deck Manager (CDM) © Steven Moss &amp; Stacy Moss. All rights reserved.</div>
-  <div class="note">This site is a static HTML starter. Update the Microsoft Store URL in <code>assets/site.js</code> when your listing is live.</div>
+  <div class="note">This site is a static HTML starter. Update the Microsoft Store URL in <code>assets/site.js?v=8</code> when your listing is live.</div>
 </div>
-  <script src="assets/site.js?v=6"></script>
+  <script src="assets/site.js?v=8"></script>
 </body>
 </html>
