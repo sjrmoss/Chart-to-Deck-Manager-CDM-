@@ -1,142 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Update PowerPoint from Excel | CDM</title>
-  <meta name="description" content="How to update PowerPoint decks when Excel charts change, without manual copy/paste."/>
-  <meta name="theme-color" content="#0F7B82"/>
-  <link rel="stylesheet" href="assets/styles.css?v=8"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Automate PowerPoint from Excel — CDM (repeatable decks)</title>
+<meta content="CDM helps you automate PowerPoint from Excel by turning selected Excel charts into consistently formatted PowerPoint slides (1-up / 2-up / 4-up)." name="description"/>
+<meta content="#0F7B82" name="theme-color"/>
+<link href="assets/styles.css?v=8" rel="stylesheet"/>
+<link href="https://sjrmoss.github.io/Chart-to-Deck-Manager-CDM-/update-powerpoint-from-excel.html" rel="canonical"/>
+<meta content="Automate PowerPoint from Excel — CDM (repeatable decks)" property="og:title"/>
+<meta content="CDM helps you automate PowerPoint from Excel by turning selected Excel charts into consistently formatted PowerPoint slides (1-up / 2-up / 4-up)." property="og:description"/>
+<meta content="https://sjrmoss.github.io/Chart-to-Deck-Manager-CDM-/update-powerpoint-from-excel.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sjrmoss.github.io/Chart-to-Deck-Manager-CDM-/assets/screens/hero.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Update PowerPoint from Excel | CDM" name="twitter:title"/>
+<meta content="How to update PowerPoint decks when Excel charts change, without manual copy/paste." name="twitter:description"/>
+<meta content="https://sjrmoss.github.io/Chart-to-Deck-Manager-CDM-/assets/screens/hero.png" name="twitter:image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Chart to Deck Manager (CDM)",
+  "operatingSystem": "Windows",
+  "applicationCategory": "BusinessApplication",
+  "description": "Deterministically convert Excel charts into professionally formatted PowerPoint decks (1‑up / 2‑up / 4‑up). Offline licensing. No accounts or servers.",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Individual License",
+      "price": "20",
+      "priceCurrency": "USD",
+      "url": "https://sjrmoss.github.io/Chart-to-Deck-Manager-CDM-/"
+    },
+    {
+      "@type": "Offer",
+      "name": "Enterprise License",
+      "price": "200",
+      "priceCurrency": "USD",
+      "url": "https://sjrmoss.github.io/Chart-to-Deck-Manager-CDM-/"
+    }
+  ]
+}
+</script>
 </head>
 <body>
-  
 <div class="topbar">
-  <div class="topbar-inner">
-    <div class="app-title"><span class="badge"></span> Chart to Deck Manager (CDM)</div>
-    <div class="topbar-right">
-      <a href="index.html" style="">Home</a> <a href="excel-charts-to-powerpoint.html" style="">Excel→PPT</a> <a href="export-excel-charts-to-ppt.html" style="">Export</a> <a href="update-powerpoint-from-excel.html" style="text-decoration:underline">Update</a> <a href="docs.html" style="">Docs</a>
-      <span class="pill"><a data-ms-store href="#">Microsoft Store</a></span>
-    </div>
-  </div>
+<div class="topbar-inner">
+<div class="app-title"><span class="badge"></span> Chart to Deck Manager (CDM)</div>
+<div class="topbar-right">
+<a href="index.html" style="">Home</a> <a href="excel-charts-to-powerpoint.html" style="">Excel→PPT</a> <a href="export-excel-charts-to-ppt.html" style="">Export</a> <a href="update-powerpoint-from-excel.html" style="text-decoration:underline">Update</a> <a href="docs.html" style="">Docs</a>
+<span class="pill"><a data-ms-store="" href="#">Microsoft Store</a></span>
 </div>
-
-  <div class="shell">
-    
+</div>
+</div>
+<div class="shell">
 <div class="sidebar">
-  <div class="sidebar-inner">
-
-    <div class="sb-group">
-      <div class="sb-label">Get CDM</div>
-      <a class="sb-btn store" data-ms-store href="#">Get it on Microsoft Store (placeholder)</a>
-      <div class="sb-note">Replace the Store link later in <code>assets/site.js?v=8</code>.</div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">Purchase</div>
-      <div class="sb-row">
-        <a class="sb-btn" data-paypal-individual href="#">Individual — $20</a>
-        <a class="sb-btn" data-paypal-enterprise href="#">Enterprise — $200</a>
-      </div>
-      <div class="sb-note">Same two-button layout as CDM’s purchase flow.</div>
-      <div style="margin-top:10px">
-        <a class="sb-btn secondary" data-open-purchase href="#"></a>
-      </div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">What CDM does</div>
-      <div class="radios">
-        <div class="radio active"><span class="dot"></span> Excel charts → PowerPoint</div>
-        <div class="radio"><span class="dot"></span> 1‑up / 2‑up / 4‑up layouts</div>
-        <div class="radio"><span class="dot"></span> Deterministic rebuilds</div>
-      </div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">Download</div>
-      <a class="sb-btn secondary" href="Instructions.pdf">Instructions (PDF)</a>
-      <div class="sb-note">This links to the Instructions.pdf you uploaded.</div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="sb-group">
-      <div class="sb-label">Contact / Support</div>
-      <div class="field">
-        <input class="input" placeholder="support@yourdomain.com (placeholder)" />
-        <div class="sb-note">Tip: use a free Gmail alias or a custom domain later.</div>
-      </div>
-    </div>
-
-  </div>
+<div class="sidebar-inner">
+<div class="sb-group">
+<div class="sb-label">Get CDM</div>
+<a class="sb-btn store" data-ms-store="" href="#">Get it on Microsoft Store (placeholder)</a>
+<div class="sb-note">Replace the Store link later in <code>assets/site.js?v=8</code>.</div>
 </div>
-
-    <main class="main">
-      <div class="main-inner">
-        
-<div class="h1">Update PowerPoint when Excel changes</div>
-<p class="lede">The core “consulting” problem: Excel changes, the deck must update, and you don’t want to rebuild slides by hand.</p>
-
+<div class="hr"></div>
+<div class="sb-group">
+<div class="sb-label">Purchase</div>
+<div class="sb-row">
+<a class="sb-btn" data-paypal-individual="" href="#">Individual — $20</a>
+<a class="sb-btn" data-paypal-enterprise="" href="#">Enterprise — $200</a>
+</div>
+<div class="sb-note">Same two-button layout as CDM’s purchase flow.</div>
+<div style="margin-top:10px">
+<a class="sb-btn secondary" data-open-purchase="" href="#"></a>
+</div>
+</div>
+<div class="hr"></div>
+<div class="sb-group">
+<div class="sb-label">What CDM does</div>
+<div class="radios">
+<div class="radio active"><span class="dot"></span> Excel charts → PowerPoint</div>
+<div class="radio"><span class="dot"></span> 1‑up / 2‑up / 4‑up layouts</div>
+<div class="radio"><span class="dot"></span> Deterministic rebuilds</div>
+</div>
+</div>
+<div class="hr"></div>
+<div class="sb-group">
+<div class="sb-label">Download</div>
+<a class="sb-btn secondary" href="Instructions.pdf">Instructions (PDF)</a>
+<div class="sb-note">This links to the Instructions.pdf you uploaded.</div>
+</div>
+<div class="hr"></div>
+<div class="sb-group">
+<div class="sb-label">Contact / Support</div>
+<div class="field">
+<input class="input" placeholder="support@yourdomain.com (placeholder)"/>
+<div class="sb-note">Tip: use a free Gmail alias or a custom domain later.</div>
+</div>
+</div>
+</div>
+</div>
+<main class="main">
+<div class="main-inner">
+<h1 class="h1">Automate PowerPoint from Excel (repeatable decks)</h1>
+<p class="lede">CDM helps you <b>automate PowerPoint from Excel</b> by turning selected Excel charts into consistently formatted slides (1-up / 2-up / 4-up) — designed for recurring reporting.</p>
 <div class="card" style="margin-top:12px">
-  <h3>CDM approach</h3>
-  <p>Re-run export from the same source and CDM rebuilds the deck deterministically. Your output stays consistent across runs.</p>
+<h3>CDM approach</h3>
+<p>Re-run export from the same source and CDM rebuilds the deck deterministically. Your output stays consistent across runs.</p>
 </div>
-
 <div class="shot">
-  <img src="assets/screenshots/cdm-layouts.png" alt="CDM layout options screenshot"/>
-  <div class="caption">Layout controls: 1-up/2-up/4-up options designed for repeatable reporting decks.</div>
+<img alt="CDM layout options screenshot" src="assets/screenshots/cdm-layouts.png"/>
+<div class="caption">Layout controls: 1-up/2-up/4-up options designed for repeatable reporting decks.</div>
 </div>
-
 <div class="card" style="margin-top:12px">
-  <h3>Next</h3>
-  <p>When you’re ready, replace the placeholder Store URL in <code>assets/site.js?v=8</code>. That updates every Store button site-wide automatically.</p>
+<h3>Next</h3>
+<p>When you’re ready, replace the placeholder Store URL in <code>assets/site.js?v=8</code>. That updates every Store button site-wide automatically.</p>
 </div>
-
-      </div>
-    </main>
-  </div>
-
-  
-<div id="purchaseBackdrop" class="modal-backdrop" aria-hidden="true">
-  <div class="modal" role="dialog" aria-modal="true" aria-label="Purchase CDM">
-    <div class="modal-header">
-      <strong>Chart to Deck Manager (CDM)</strong>
-      <button id="purchaseClose" class="modal-close" aria-label="Close">✕</button>
-    </div>
-    <div class="modal-body">
-      <p><b>30‑day free trial</b>, then a simple offline license key. No accounts.</p>
-
-      <div class="modal-actions">
-        <a class="sb-btn store" data-ms-store href="#">Get it on Microsoft Store (placeholder)</a>
-
-        <div class="mini-row">
-          <a class="sb-btn" data-paypal-individual href="#">Buy Individual License — $20 (PayPal)</a>
-          <a class="sb-btn" data-paypal-enterprise href="#">Buy Enterprise (10+ users) — $200 (PayPal)</a>
-        </div>
-
-        <div class="field">
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
-            <div style="font-weight:900">License key</div>
-            <button id="copyKey" class="sb-btn secondary" style="width:auto; padding:10px 14px">Copy</button>
-          </div>
-          <input id="licenseKey" class="input" value="CDM-1123-9292" readonly />
-          <div class="smallprint">Paste into CDM when prompted (example key shown). Press <kbd>Esc</kbd> to close this window.</div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-
-  <div class="footer">
-  <div>Chart to Deck Manager (CDM) © Steven Moss &amp; Stacy Moss. All rights reserved.</div>
-  <div class="note">This site is a static HTML starter. Update the Microsoft Store URL in <code>assets/site.js?v=8</code> when your listing is live.</div>
+</main>
 </div>
-  <script src="assets/site.js?v=8"></script>
+<div aria-hidden="true" class="modal-backdrop" id="purchaseBackdrop">
+<div aria-label="Purchase CDM" aria-modal="true" class="modal" role="dialog">
+<div class="modal-header">
+<strong>Chart to Deck Manager (CDM)</strong>
+<button aria-label="Close" class="modal-close" id="purchaseClose">✕</button>
+</div>
+<div class="modal-body">
+<p><b>30‑day free trial</b>, then a simple offline license key. No accounts.</p>
+<div class="modal-actions">
+<a class="sb-btn store" data-ms-store="" href="#">Get it on Microsoft Store (placeholder)</a>
+<div class="mini-row">
+<a class="sb-btn" data-paypal-individual="" href="#">Buy Individual License — $20 (PayPal)</a>
+<a class="sb-btn" data-paypal-enterprise="" href="#">Buy Enterprise (10+ users) — $200 (PayPal)</a>
+</div>
+<div class="field">
+<div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+<div style="font-weight:900">License key</div>
+<button class="sb-btn secondary" id="copyKey" style="width:auto; padding:10px 14px">Copy</button>
+</div>
+<input class="input" id="licenseKey" readonly="" value="CDM-1123-9292"/>
+<div class="smallprint">Paste into CDM when prompted (example key shown). Press <kbd>Esc</kbd> to close this window.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div>Chart to Deck Manager (CDM) © Steven Moss &amp; Stacy Moss. All rights reserved.</div>
+<div class="note">This site is a static HTML starter. Update the Microsoft Store URL in <code>assets/site.js?v=8</code> when your listing is live.</div>
+</div>
+<script src="assets/site.js?v=8"></script>
 </body>
 </html>
