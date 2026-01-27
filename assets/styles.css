@@ -179,3 +179,56 @@ a{color:inherit}
   font-size:12px;
   padding:10px 0 18px;
 }
+
+
+/* --- Overrides / additions (v2) --- */
+
+/* Purchase / Store buttons — match CDM app look (blue, rounded, white text) */
+.cdm-btn.cdm-btn-buy{
+  background: linear-gradient(180deg, #17aee5, #0a90c6);
+  color:#ffffff;
+  border:1px solid rgba(0,0,0,.18);
+  box-shadow: 0 2px 0 rgba(0,0,0,.25);
+  font-weight:800;
+}
+.cdm-btn.cdm-btn-buy:hover{
+  filter: brightness(1.04);
+}
+.cdm-btn.cdm-btn-buy:active{
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 rgba(0,0,0,.22);
+}
+
+/* Header/Footer button layout */
+.bar-actions, .actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+@media (max-width: 740px){
+  .bar-actions, .actions{gap:8px}
+  .cdm-btn.cdm-btn-buy{flex:1 1 220px; text-align:center;}
+}
+
+/* Demo video */
+.video{margin-top:18px;}
+.video .muted{opacity:.92; max-width: 80ch;}
+.video-frame{
+  margin-top:10px;
+  background: rgba(0,0,0,.18);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:14px;
+  box-shadow: var(--shadow);
+  padding:12px;
+}
+.video-frame video{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:10px;
+}
+
+/* Screenshot figures */
+.figure img{width:100%; height:auto; display:block;}
+.figure figcaption{font-size:14px; line-height:1.35;}
