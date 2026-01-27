@@ -1,62 +1,37 @@
-// CDM site config — replace these when ready
+// CDM website link config
+// Replace msStoreUrl when your Microsoft Store listing is live.
 const CDM = {
-  msStoreUrl: "https://www.microsoft.com/store/apps/<YOUR-APP-ID-HERE>",  // <-- replace later
-  paypalIndividualUrl: "#", // <-- optional: put your PayPal purchase link here
-  paypalEnterpriseUrl:  "#", // <-- optional: put your PayPal purchase link here
+  // Placeholder that still works (opens Microsoft Store web). Replace later with your real listing URL.
+  msStoreUrl: "https://www.microsoft.com/store/apps/",
+
+  // PayPal "Buy Now" style links using your PayPal recipient email.
+  // These work today and can be replaced later with PayPal buttons, a checkout page, or your Store listing.
+  paypalIndividualUrl:
+    "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sj.moss%40comcast.net&item_name=Chart%20to%20Deck%20Manager%20(CDM)%20-%20Individual%20License&amount=20&currency_code=USD",
+  paypalEnterpriseUrl:
+    "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sj.moss%40comcast.net&item_name=Chart%20to%20Deck%20Manager%20(CDM)%20-%20Enterprise%20License%20(10%2B%20users)&amount=200&currency_code=USD",
 };
 
-function $(sel){ return document.querySelector(sel); }
+function wireLinks() {
+  document.querySelectorAll("[data-ms-store]").forEach((a) => {
+    a.setAttribute("href", CDM.msStoreUrl);
+    a.setAttribute("target", "_blank");
+    a.setAttribute("rel", "noopener");
+  });
 
-function wireLinks(){
-  document.querySelectorAll('[data-ms-store]').forEach(a => a.setAttribute('href', CDM.msStoreUrl));
-  document.querySelectorAll('[data-paypal-individual]').forEach(a => a.setAttribute('href', CDM.paypalIndividualUrl));
-  document.querySelectorAll('[data-paypal-enterprise]').forEach(a => a.setAttribute('href', CDM.paypalEnterpriseUrl));
-}
+  document.querySelectorAll("[data-paypal-individual]").forEach((a) => {
+    a.setAttribute("href", CDM.paypalIndividualUrl);
+    a.setAttribute("target", "_blank");
+    a.setAttribute("rel", "noopener");
+  });
 
-function openPurchase(){
-  const bd = $("#purchaseBackdrop");
-  if(!bd) return;
-  bd.style.display = "block";
-  document.body.style.overflow = "hidden";
-}
-
-function closePurchase(){
-  const bd = $("#purchaseBackdrop");
-  if(!bd) return;
-  bd.style.display = "none";
-  document.body.style.overflow = "";
-}
-
-function setupModal(){
-  const openers = document.querySelectorAll('[data-open-purchase]');
-  openers.forEach(b => b.addEventListener('click', (e)=>{ e.preventDefault(); openPurchase(); }));
-  const closer = $("#purchaseClose");
-  if(closer) closer.addEventListener('click', closePurchase);
-  const bd = $("#purchaseBackdrop");
-  if(bd) bd.addEventListener('click', (e)=>{ if(e.target === bd) closePurchase(); });
-  document.addEventListener('keydown', (e)=>{ if(e.key === "Escape") closePurchase(); });
-}
-
-function setupLicenseCopy(){
-  const btn = $("#copyKey");
-  const field = $("#licenseKey");
-  if(!btn || !field) return;
-  btn.addEventListener('click', async ()=>{
-    try{
-      await navigator.clipboard.writeText(field.value);
-      btn.textContent = "Copied";
-      setTimeout(()=>btn.textContent="Copy", 1200);
-    }catch{
-      field.select();
-      document.execCommand('copy');
-      btn.textContent = "Copied";
-      setTimeout(()=>btn.textContent="Copy", 1200);
-    }
+  document.querySelectorAll("[data-paypal-enterprise]").forEach((a) => {
+    a.setAttribute("href", CDM.paypalEnterpriseUrl);
+    a.setAttribute("target", "_blank");
+    a.setAttribute("rel", "noopener");
   });
 }
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   wireLinks();
-  setupModal();
-  setupLicenseCopy();
 });
